@@ -11,3 +11,5 @@ PS1='[\u@\h \W]\$ '
 setxkbmap -layout latam
 
 alias config='/usr/bin/git --git-dir=/home/juamnito/.cfg/ --work-tree=/home/juamnito'
+
+PATH=$PATH:$HOME/.scripts

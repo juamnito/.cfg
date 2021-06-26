@@ -16,7 +16,7 @@ ctrl + super + Escape
 
 # file manager
 super + shift + n
-    alacritty ranger
+    alacritty && ranger
 
 #
 # bspwm hotkeys

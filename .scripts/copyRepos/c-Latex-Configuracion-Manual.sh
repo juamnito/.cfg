@@ -7,5 +7,5 @@ cd $HOME
 
 if [ ! -d $repo ] ;
 then
-    git clone https://github.com/$github_usr/$repo.git
+    git clone https://github.com/$github_usr/$repo.git ;
 fi

@@ -26,7 +26,9 @@ bspc rule -a obs-studio desktop='^4'
 
 xsetroot -cursor_name left_ptr &
 compton -f -D 3 &
-bash $HOME/.config/polybar/cuts/scripts/pywal.sh $HOME/imagenes/wallpapers/wallpaper.jpg
+
+# bash $HOME/.config/polybar/cuts/scripts/pywal.sh $HOME/imagenes/wallpapers/wallpaper/wallpaper.jpg
+nitrogen --restore &
+
 bash $HOME/.config/polybar/launch.sh --cuts &
 bash $HOME/.config/polybar/material/scripts/random.sh &
-# polybar example

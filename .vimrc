@@ -56,8 +56,8 @@ set list
     " set hlsearch                                              
                                                                 
     " colors                                                    
-        " colorscheme gruvbox
-        colorscheme xcodedark
+        colorscheme gruvbox
+        " colorscheme xcodedark
         " colorscheme xcodedarkhc
         " colorscheme xcodelight
         " colorscheme xcodewwdc
@@ -85,13 +85,13 @@ let g:ctrlp_use_caching=0
 "================================================================|
 "////////////// PLUGGINS CONFIG /////////////////////////////////|
 "================================================================|
-    source /home/juamnito/.vim/c-plugs/plugged.vim
-    source /home/juamnito/.vim/c-plugs/plugs-config.vim
+    source $HOME/.vim/c-plugs/plugged.vim
+    source $HOME/.vim/c-plugs/plugs-config.vim
 "////////////////////////////////////////////////////////////////|
 "================================================================|
 
 "================================================================|
 "////////////// MAPPINGS ////////////////////////////////////////|
 "================================================================|
-    source /home/juamnito/.vim/c-plugs/maps.vim
+    source $HOME/.vim/c-plugs/maps.vim
 "////////////////////////////////////////////////////////////////|

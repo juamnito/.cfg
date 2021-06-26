@@ -1,0 +1,31 @@
+#! /bin/sh
+
+#Configuracion de fuanito
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+# bspc monitor HDMI-A-0 -d X
+
+gap=2
+polybar_width=20
+top_padding=$polybar_width+$gap
+
+bspc config border_width            $gap
+bspc config normal_border_color     "#383C36"
+bspc config focused_border_color    "#DD8D3D"
+
+bspc config window_gap              $gap
+bspc config top_padding             $top_padding+2
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a obs-studio desktop='^4'
+
+xsetroot -cursor_name left_ptr &
+compton -f -D 3 &
+bash ~/.config/polybar/cuts/scripts/pywal.sh ~/Imágenes/wallpapers/bridge.jpg
+bash ~/.config/polybar/launch.sh --blocks &
+bash ~/.config/polybar/material/scripts/random.sh &

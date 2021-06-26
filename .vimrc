@@ -42,8 +42,10 @@ syntax on
 set clipboard=unnamedplus
 
 set mouse=a
+
     " Tabs
-        filetype indent on
+    filetype indent on
+
 set smartindent                                               
 set encoding=UTF-8
 
@@ -53,6 +55,7 @@ set list
                                                                 
     " searching words                                           
     set ignorecase                                              
+
     " set hlsearch                                              
                                                                 
     " colors                                                    

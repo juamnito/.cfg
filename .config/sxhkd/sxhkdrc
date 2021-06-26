@@ -4,12 +4,11 @@
 
 # terminal emulator
 super + Return
-	gnome-terminal
+	alacritty
 
 # program launcher
 super + @space
-    ~/.config/polybar/cuts/scripts/launcher.sh &
-	# dmenu_run -l 20 -h 28 -c
+	dmenu_run -l 20 # -h 28 -c
 
 # make sxhkd reload its configuration files:
 ctrl + super + Escape
@@ -17,7 +16,7 @@ ctrl + super + Escape
 
 # file manager
 super + shift + n
-    nautilus
+    alacritty ranger
 
 #
 # bspwm hotkeys
@@ -129,20 +128,12 @@ super + alt u
     setxkbmap -layout latam
 
 #Volume Control
-XF86AudioLowerVolume
-	amixer set Master 5%-
 
 XF86AudioLowerVolume
 	amixer -D pulse sset Master 5%-
 
 XF86AudioRaiseVolume
-	amixer set Master 5%+
-
-XF86AudioRaiseVolume
 	amixer -D pulse sset Master 5%+
-
-XF86AudioMute
-    amixer set Master toggle
 
 XF86AudioMute
 	amixer -D pulse sset Master toggle

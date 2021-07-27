@@ -45,8 +45,8 @@ let g:quicktex_tex = {
     \'mmth' : "\\[\<CR><+++>\<CR>\\]\<CR><++>",
     \'prf' : "\\begin{proof}\<CR><+++>\<CR>\\end{proof}",
     \'sol' : "\\begin{solution}\<CR><+++>\<CR>\\end{solution}",
-    \'itemize' : "\\begin{itemize}\<CR>\\item<+++>\<CR><++>\<CR>\\end{itemize}",
-    \'enumerate' : "\\begin{enumerate}[<+++>]\<CR>\\item\<CR><++>\<CR>\\end{enumerate}",
+    \'itemize' : "\\begin{Itemize}\<CR>\\item<+++>\<CR><++>\<CR>\\end{Itemize}",
+    \'enumerate' : "\\begin{Enumerate}[<+++>]\<CR>\\item\<CR><++>\<CR>\\end{Enumerate}",
     \'env' : "\\begin{<+++>}\<CR>\<CR>\\end{<++>}",
     \'align' : "\\begin{align*}\<CR><+++>\<CR>\\end{align*}",
     \'eqn' : "\\begin{equation*}\<CR><+++>\<CR>\\end{equation*}"

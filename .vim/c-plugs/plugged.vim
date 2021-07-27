@@ -23,8 +23,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
-    " Telescope 
-    Plug 'nvim-telescope/telescope.nvim'
+    " " Telescope 
+    " Plug 'nvim-telescope/telescope.nvim'
 
     " Vim-Tex
     Plug 'brennier/quicktex'

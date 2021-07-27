@@ -82,11 +82,12 @@ source $ZSH/oh-my-zsh.sh
 export LANG=es_MX.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='vim'
-else
-    export EDITOR='nvim'
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#     export EDITOR='vim'
+# else
+#     export EDITOR='nvim'
+# fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -107,3 +108,12 @@ alias config='/usr/bin/git --git-dir=/home/juamnito/.cfg/ --work-tree=/home/juam
 PATH=$PATH:$HOME/.scripts
 
 bindkey -v
+
+
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts
+
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+    exec startx
+fi
+
+neofetch

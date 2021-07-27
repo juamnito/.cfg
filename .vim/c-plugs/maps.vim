@@ -57,6 +57,7 @@ let mapleader=" "
         autocmd FileType tex nnoremap enun :!~/Latex-Configuracion-Manual/Scripts/Enunciados.sh<CR><CR>
     " C++ 
         autocmd FileType cpp inoremap /* /**/<Left><Left>
+        autocmd FileType cpp inoremap {<CR> {<CR>}<C-o>O
 
 "////////////////////////////////////////////////////////////////|
 "================================================================|

@@ -16,7 +16,15 @@ ctrl + super + Escape
 
 # file manager
 super + shift + n
-    alacritty && ranger
+    alacritty -e ranger
+
+# system monitor
+super + shift + t
+    alacritty -e htop
+
+# spotify-tui
+super + shift + s
+    spotify
 
 #
 # bspwm hotkeys

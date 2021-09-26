@@ -4,7 +4,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X # bspc monitor HDMI-A-0 -d X
+bspc monitor -d I II III IV V VI VII VIII IX X
+# bspc monitor -d I II III IV V VI VII VIII IX bspc monitor HDMI-A-0 -d X
 
 window_gap=15
 border=2
@@ -12,9 +13,8 @@ polybar_height=27
 top_padding=$polybar_height # $(($polybar_height-$window_gap-10))
 
 bspc config border_width            $border
-bspc config normal_border_color     "#000000"
-bspc config focused_border_color    "#FFFFFF"
-
+bspc config normal_border_color     "#1F1F36"
+bspc config focused_border_color    "#FFb52A"
 bspc config window_gap              $window_gap
 bspc config top_padding             $top_padding
 
@@ -25,10 +25,14 @@ bspc config gapless_monocle      true
 # Rules
 
 bspc rule -r "*"
-bspc rule -a "*" state=tiled
+bspc rule -a Zathura state=tiled
 
+# Run
+
+bluetoothctl power on
+setxkbmap -layout latam
 xsetroot -cursor_name left_ptr &
-compton -f -D 3 &
-
 nitrogen --restore &
-polybar mybar &
+
+# polybar
+$HOME/.config/polybar/launch.sh

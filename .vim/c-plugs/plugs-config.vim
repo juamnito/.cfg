@@ -45,9 +45,10 @@ let g:quicktex_tex = {
     \'mmth' : "\\[\<CR><+++>\<CR>\\]\<CR><++>",
     \'prf' : "\\begin{proof}\<CR><+++>\<CR>\\end{proof}",
     \'sol' : "\\begin{solution}\<CR><+++>\<CR>\\end{solution}",
-    \'itemize' : "\\begin{Itemize}\<CR>\\item<+++>\<CR><++>\<CR>\\end{Itemize}",
-    \'enumerate' : "\\begin{Enumerate}[<+++>]\<CR>\\item\<CR><++>\<CR>\\end{Enumerate}",
-    \'env' : "\\begin{<+++>}\<CR>\<CR>\\end{<++>}",
+    \'itemize' : "\\begin{itemize}<+++>\<CR>\\item\<CR><++>\<CR>\\end{itemize}",
+    \'enumerate' : "\\begin{enumerate}<+++>\<CR>\\item\<CR><++>\<CR>\\end{enumerate}",
+    \'item': "\\item\<CR><+++>",
+    \'env' : "\\begin{<+++>}\<CR>\\end{<++>}",
     \'align' : "\\begin{align*}\<CR><+++>\<CR>\\end{align*}",
     \'eqn' : "\\begin{equation*}\<CR><+++>\<CR>\\end{equation*}"
 \}
@@ -56,6 +57,7 @@ let g:quicktex_math = {
     \' '    : "\<ESC>:call search('<+.*+>')\<CR>\"_c/+>/e\<CR>",
     \'set'  : '\left\{ <+++> \right\} <++>',
     \'frac' : '\frac{<+++>}{<++>} <++>',
+    \'dfrac' : '\dfrac{<+++>}{<++>} <++>',
     \'indic' : '\ind{<+++>}{<++>} <++>',
     \'Pars' : '\left( <+++> \right) <++>',
     \'pars' : '( <+++> ) <++>',
@@ -67,13 +69,31 @@ let g:quicktex_math = {
 \}
 "/////////////////////////////////////////////////////////////////|
 "=================================================================|
-"
-"
+
+
 "=================================================================|
 "////////////// vim-latex-live-preview ///////////////////////////|
 "=================================================================|
 
 let g:livepreview_previewer = 'zathura'
+
+"////////////////////////////////////////////////////////////////|
+"================================================================|
+
+
+"=================================================================|
+"////////////// colorscheme onecolor ///////////////////////////|
+"=================================================================|
+
+" if (empty($TMUX))
+"     if (has("nvim"))
+"           let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"     endif
+"     if (has("termguicolors"))
+"         set termguicolors
+"     endif
+" endif
+
 
 "////////////////////////////////////////////////////////////////|
 "================================================================|

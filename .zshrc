@@ -14,7 +14,21 @@ ZSH_THEME="random"
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "af-magic" "darkblood" )
+ZSH_THEME_RANDOM_CANDIDATES=( 
+    # "pmcgee"
+    # "norm"
+    "awesomepanda"
+    # "imajes"
+    # "dst"
+    # "candy-kingdom"
+    # "jbergantine"
+    # "sonicradish"
+    # "terminalparty"
+    # "tonotdo"
+    # "agnoster" 
+    # "af-magic" 
+    # "darkblood" 
+)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -109,11 +123,8 @@ PATH=$PATH:$HOME/.scripts
 
 bindkey -v
 
-
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
     exec startx
 fi
-
-neofetch

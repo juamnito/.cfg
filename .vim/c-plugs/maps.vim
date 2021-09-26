@@ -11,9 +11,9 @@ let mapleader=" "
     inoremap <silent> <C-S>         <C-O>:update<CR>
 
     " Generic                                                   
-    inoremap (  ()<Left>
-    inoremap {  {}<Left>
-    inoremap [  []<Left>
+    inoremap ( ()<Left>
+    inoremap { {}<Left>
+    inoremap [ []<Left>
 
     inoremap ' ''<Left>
     inoremap " ""<Left>
@@ -53,8 +53,8 @@ let mapleader=" "
         autocmd FileType tex inoremap $ $$<Left>
         autocmd FileType tex imap \[ \[\]<Left><Left>                     
 
-        autocmd FileType tex nnoremap verpdf :!~/Latex-Configuracion-Manual/Scripts/Ver.sh<CR><CR>
-        autocmd FileType tex nnoremap enun :!~/Latex-Configuracion-Manual/Scripts/Enunciados.sh<CR><CR>
+        autocmd FileType tex nnoremap enun :!~/Latex-Configuracion-Manual/Scripts/open-enun<CR><CR>
+        autocmd FileType tex nnoremap sbib :!~/Latex-Configuracion-Manual/Scripts/open-bib<CR><CR>
     " C++ 
         autocmd FileType cpp inoremap /* /**/<Left><Left>
         autocmd FileType cpp inoremap {<CR> {<CR>}<C-o>O

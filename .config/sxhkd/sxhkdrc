@@ -8,7 +8,10 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run # -l 20 # -h 28 -c
+	dmenu_run -h 20 
+
+alt + @space
+	dmenu_run -l 20 -c
 
 # make sxhkd reload its configuration files:
 ctrl + super + Escape
@@ -19,12 +22,19 @@ super + shift + n
     alacritty -e ranger
 
 # system monitor
-super + shift + t
+ctrl + alt + t
     alacritty -e htop
 
-# spotify-tui
+# spotify
 super + shift + s
     spotify
+
+# Toggle comtpon
+super + C
+    ~/.config/sxhkd/toggle-compton.sh
+
+super + alt + w
+    chromium
 
 #
 # bspwm hotkeys

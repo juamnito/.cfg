@@ -1,11 +1,14 @@
 call plug#begin('~/.vim/plugged')                               
                                                                 
+    " Colors
     Plug 'morhetz/gruvbox'                                          
     Plug 'arzg/vim-colors-xcode'
+    Plug 'joshdick/onedark.vim'
 
     Plug 'jremmen/vim-ripgrep'                                      
     Plug 'tpope/vim-fugitive'                                       
-
+    " Plug 'vim-colors-lucid'
+    Plug 'mrkn/mrkn256'
 
     " Nerd Tree
     Plug 'preservim/nerdtree'                                       
@@ -34,5 +37,9 @@ call plug#begin('~/.vim/plugged')
 
     " Javascript
     Plug 'pangloss/vim-javascript'
+
+    " Python
+    Plug 'tmhedberg/simpylfold'
+    " Plug 'nvie/vim-flake8'
                                                                 
 call plug#end()                                                 

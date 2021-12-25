@@ -5,7 +5,8 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
-# bspc monitor -d I II III IV V VI VII VIII IX bspc monitor HDMI-A-0 -d X
+# bspc monitor -d I II III IV V VI VII VIII IX 
+# bspc monitor HDMI-A-0 -d X
 
 window_gap=15
 border=2

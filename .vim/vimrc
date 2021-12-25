@@ -13,7 +13,7 @@
 set nocompatible
 
 set exrc
-set guicursor
+""set guicursor
 set relativenumber
 set nu                                                          
 set nohlsearch
@@ -58,7 +58,7 @@ set list
                                                                 
     " colors                                                    
         colorscheme onedark
-        " colorscheme gruvbox
+        "colorscheme gruvbox
         " colorscheme xcodedark
         " colorscheme xcodedarkhc
         " colorscheme xcodewwdc

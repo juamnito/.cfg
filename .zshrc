@@ -56,7 +56,7 @@ export UPDATE_ZSH_DAYS=13
 DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -115,7 +115,6 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-setxkbmap -layout latam
 
 alias config='/usr/bin/git --git-dir=/home/juamnito/.cfg/ --work-tree=/home/juamnito'
 
@@ -128,3 +127,6 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/us
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
     exec startx
 fi
+
+setxkbmap -layout latam
+PATH=$PATH:$HOME/documentos/licenciatura/5-semestre-matematicas/seminarios/julia-taller/julia-1.6.3/bin

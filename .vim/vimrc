@@ -57,13 +57,17 @@ set list
     " set hlsearch                                              
                                                                 
     " colors                                                    
-        colorscheme onedark
+        colo seoul256
+        ""colorscheme onedark
         "colorscheme gruvbox
         " colorscheme xcodedark
         " colorscheme xcodedarkhc
         " colorscheme xcodewwdc
     set background=dark
     " highlight Normal guibg=none
+    "
+    " Transparency
+    ""hi Normal guibg=NONE ctermbg=NONE
 
 " Si necesitas el árbol de archivos cada que inicies vim descomenta lo
 " siguiente

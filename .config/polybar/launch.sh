@@ -1,6 +1,8 @@
 #!/bin/bash
 
-bar=mybar
+bar=top
+bottom=bottom
+config=$HOME/.config/polybar/main.ini
 
 # Terminate already running bar instances
 killall -q polybar
@@ -12,6 +14,8 @@ do
 done
 
 # Launch Polybar using default config location ~/.config/polybar/config
-polybar $bar 2>&1 | tee -a /tmp/polybar.log & disown
+echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
+polybar $bar --config=$config 2>&1 | tee -a /tmp/polybar1.log & disown
+polybar $bottom --config=$config 2>&1 | tee -a /tmp/polybar2.log & disown
 
-echo "Polybar launched..."
+echo "Polybar launched..." 

@@ -84,7 +84,11 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# plugins=(git)
+plugins=(
+    git 
+    zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,7 +108,7 @@ export LANG=es_MX.UTF-8
 export EDITOR='vim'
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -118,15 +122,17 @@ export EDITOR='vim'
 
 alias config='/usr/bin/git --git-dir=/home/juamnito/.cfg/ --work-tree=/home/juamnito'
 
-PATH=$PATH:$HOME/.scripts
+# PATH=$PATH:$HOME/.scripts
 
 bindkey -v
 
+TERMINAL=alacritty
+
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts
 
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-    exec startx
-fi
+# if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+#     exec startx
+# fi
 
-setxkbmap -layout latam
-PATH=$PATH:$HOME/documentos/licenciatura/5-semestre-matematicas/seminarios/julia-taller/julia-1.6.3/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/T-scripts/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/T-scripts/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/T-scripts/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/T-scripts/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts

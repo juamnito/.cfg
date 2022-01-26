@@ -1,13 +1,13 @@
-bluejeans 2.23.0-1
-dragon-drag-and-drop 1.1.1-1
-fontpreview 1.0.6-2
-greetd 0.7.0-1
-greetd-tuigreet 0.6.1-1
-ly 0.5.2-2
-polybar 3.5.6-1
-siji-git r23.c691f20-2
-spotify 1:1.1.68.632-1
-teams 1.4.00.13653-1
-visual-studio-code-bin 1.60.2-1
-yay-git 10.3.1.r22.gf42cbde-1
-zoom 5.8.0-1
+bluejeans 
+dragon-drag-and-drop 
+fontpreview 
+greetd 
+greetd-tuigreet 
+ly 
+polybar 
+siji-git 
+spotify 
+teams 
+visual-studio-code-bin 
+yay-git 
+zoom 

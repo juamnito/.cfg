@@ -1,35 +1,11 @@
-# Copyright (c) 2010 Aldo Cortesi
-# Copyright (c) 2010, 2014 dequis
-# Copyright (c) 2012 Randall Ma
-# Copyright (c) 2012-2014 Tycho Andersen
-# Copyright (c) 2012 Craig Barnes
-# Copyright (c) 2013 horsik
-# Copyright (c) 2013 Tao Sauvage
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
 from typing import List  # noqa: F401
 
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
+
+import os
 
 mod = "mod4"
 terminal = guess_terminal()
@@ -78,27 +54,30 @@ keys = [
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawncmd(),
+    Key([mod], "r", 
+        lazy.spawncmd(), 
         desc="Spawn a command using a prompt widget"),
 ]
 
-# groups = [Group(i) for i in "123456789"]
+groups = [Group(i) for i in "123456789'"]
 
-def init_group_names():
-    return [
-            ("1", {'layout': 'max'}),
-            ("2", {'layout': 'max'}),
-            ("3", {'layout': 'max'}),
-            ("4", {'layout': 'max'}),
-            ("5", {'layout': 'max'}),
-            ("6", {'layout': 'max'}),
-            ("7", {'layout': 'max'}),
-            ("8", {'layout': 'max'}),
-            ("9", {'layout': 'max'})
-    ]
-
-    def init_groups():
-        return [Group(name, **kwargs) for name,kwargs in group_names]
+# def init_group_names():
+#     return [
+#             ("1", {'layout': 'max'}),
+#             ("2", {'layout': 'max'}),
+#             ("3", {'layout': 'max'}),
+#             ("4", {'layout': 'max'}),
+#             ("5", {'layout': 'max'}),
+#             ("6", {'layout': 'max'}),
+#             ("7", {'layout': 'max'}),
+#             ("8", {'layout': 'max'}),
+#             ("9", {'layout': 'max'})
+#     ]
+# 
+#     def init_groups():
+#         return [Group(name, **kwargs) for name,kwargs in group_names]
+# 
+# groups = init_group_names().init_groups()
 
 for i in groups:
     keys.extend([
@@ -134,13 +113,14 @@ layouts = [
 widget_defaults = dict(
     font='sans',
     fontsize=12,
-    padding=3,
+    padding=5,
 )
+
 extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        bottom=bar.Bar(
+        top=bar.Bar(
             [
                 widget.CurrentLayout(),
                 widget.GroupBox(),
@@ -152,7 +132,7 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.TextBox("default config", name="default"),
+                #jwidget.TextBox("default config", name="default"),
                 widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),

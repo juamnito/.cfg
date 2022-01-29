@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')                               
+call plug#begin('~/.config/nvim/plugged')                               
                                                                 
     " Colors
     Plug 'morhetz/gruvbox'                                          
@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-utils/vim-man'                                        
     Plug 'lyuts/vim-rtags'                                          
     Plug 'https://github.com/kien/ctrlp.vim'                        
-    Plug 'https://github.com/ycm-core/YouCompleteMe'                
+    ""Plug 'https://github.com/ycm-core/YouCompleteMe'                
     Plug 'mbbill/undotree'                                          
     Plug 'VundleVim/Vundle.vim'                                     
 

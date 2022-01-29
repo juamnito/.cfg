@@ -17,7 +17,7 @@ ZSH_THEME="random"
 ZSH_THEME_RANDOM_CANDIDATES=( 
     # "pmcgee"
     # "norm"
-    "awesomepanda"
+    # "awesomepanda"
     # "imajes"
     # "dst"
     # "candy-kingdom"
@@ -25,7 +25,7 @@ ZSH_THEME_RANDOM_CANDIDATES=(
     # "sonicradish"
     # "terminalparty"
     # "tonotdo"
-    # "agnoster" 
+    "agnoster" 
     # "af-magic" 
     # "darkblood" 
 )
@@ -54,6 +54,8 @@ export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"
+
+PS1="HOLA"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -88,6 +90,7 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(
     git 
     zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -105,7 +108,7 @@ export LANG=es_MX.UTF-8
 # else
 #     export EDITOR='nvim'
 # fi
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
@@ -128,11 +131,19 @@ bindkey -v
 
 TERMINAL=alacritty
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts
-
 # if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 #     exec startx
 # fi
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/T-scripts/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/T-scripts/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/T-scripts/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/T-scripts/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/Latex-Configuracion-Manual/Scripts:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/juamnito/.scripts:/home/juamnito/.scripts:/home/juamnito/.scripts
+
+# Basic tab complete:
+# autoload -U compinit
+
+# PATHS
+export PATH=$PATH:~/.local/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/juamnito/.local/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/juamnito/.local/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/juamnito/.local/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/juamnito/.local/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/juamnito/.local/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/juamnito/.local/bin

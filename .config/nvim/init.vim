@@ -10,10 +10,11 @@
 "////////////// GENERAL SETTINGS ////////////////////////////////|
 "================================================================|
 
-set nocompatible
+""set nocompatible
 
 set exrc
 ""set guicursor
+set cursorline
 set relativenumber
 set nu
 set nohlsearch
@@ -27,12 +28,12 @@ set showmode
 
 
 set wrap
-set linebreak
+""set linebreak
 set textwidth=0
 
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir=~/.config/nvim/undodir
 set undofile
 
 set incsearch
@@ -75,7 +76,7 @@ set list
 
 " Si necesitas el árbol de archivos cada que inicies vim descomenta lo
 " siguiente
-    ""autocmd VimEnter * NERDTree
+    " autocmd VimEnter * NERDTree
 
 if executable('rg')
     let g:rg_derive_root='true'
@@ -95,8 +96,8 @@ let g:ctrlp_use_caching=0
 "================================================================|
 "////////////// PLUGGINS CONFIG /////////////////////////////////|
 "================================================================|
-    source $HOME/.vim/c-plugs/plugged.vim
-    source $HOME/.vim/c-plugs/plugs-config.vim
+    source $HOME/.config/nvim/c-plugs/plugged.vim
+    source $HOME/.config/nvim/c-plugs/plugs-config.vim
 "////////////////////////////////////////////////////////////////|
 "================================================================|
 
@@ -104,6 +105,6 @@ let g:ctrlp_use_caching=0
 "================================================================|
 "////////////// MAPPINGS ////////////////////////////////////////|
 "================================================================|
-    source $HOME/.vim/c-plugs/maps.vim
+    source $HOME/.config/nvim/c-plugs/maps.vim
 "////////////////////////////////////////////////////////////////|
 "================================================================|

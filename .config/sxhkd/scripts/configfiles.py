@@ -10,6 +10,7 @@ files = {
     "   polybar": ("~/.config/polybar/","config.ini"),
         # Text editors
     "  vim": ("~/.vim/","vimrc"),
+    "  nvim": ("~/.config/nvim/","init.vim"),
         # Command termnials
     "  zsh": ("~/",".zshrc"),
     "  alacritty": ("~/.config/alacritty/","alacritty.yml"),

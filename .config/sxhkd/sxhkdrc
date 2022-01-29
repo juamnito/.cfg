@@ -29,7 +29,7 @@ alt + shift + @space
 super + shift + n
     alacritty -e ranger
 
-super + shift + h
+# super + shift + h
 
 
 # system monitor

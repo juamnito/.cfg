@@ -1,7 +1,6 @@
 ############################################
 
-import os
-import sys
+import os, sys
 
 sys.path.append("/home/juamnito/documentos/licenciatura/.scripts")
 

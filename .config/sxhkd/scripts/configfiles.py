@@ -3,43 +3,44 @@ import os
 # List of the configuration files and their location
 files = {
         # Window managers
-    "  bspwm": ("~/.config/bspwm/","bspwmrc"),
-    "  qtile": ("~/.config/qtile/","config.py"),
-    "  sxhkd": ("~/.config/sxhkd/","sxhkdrc"),
+    "bspwm": ("~/.config/bspwm/", ""),
+    "qtile": ("~/.config/qtile/", ""),
+    "sxhkd": ("~/.config/sxhkd/",""),
         # Status bar
-    "   polybar": ("~/.config/polybar/","config.ini"),
+    "polybar": ("~/.config/polybar/", " "),
         # Text editors
-    "  vim": ("~/.vim/","vimrc"),
-    "  nvim": ("~/.config/nvim/","init.vim"),
+    "nvim": ("~/.config/nvim/",""),
         # Command termnials
-    "  zsh": ("~/",".zshrc"),
-    "  alacritty": ("~/.config/alacritty/","alacritty.yml"),
+    "zsh": ("~/",""),
+    "alacritty": ("~/.config/alacritty/",""),
         # launchers
-    "   dmenu": ("~/.tools/dmenu-5.0","config.def.h"),
-    "   rofi": ("~/.config/rofi","config.raisi"),
+    "dmenu": ("~/.tools/dmenu-5.0"," "),
+    "rofi": ("~/.config/rofi"," "),
         # file managers
-    "  ranger-rc.conf": ("~/.config/ranger/","rc.conf"),
-    "  ranger-rifle.conf": ("~/.config/ranger/","rifle.conf"),
+    "ranger": ("~/.config/ranger/",""),
         # Pdf viewers
-    "  zathura": ("~/.config/zathura/","zathurarc"),
+    "zathura": ("~/.config/zathura/",""),
         # Latex Scripts
-    "   T-scripts/Scripts": ("~/T-scripts/Scripts",""),
-    "   T-scripts/Ejemplos": ("~/T-scripts/Ejemplos",""),
+    "fstx": ("~/.tools/fstx"," "),
         # system
-    "   gtk-3.0": ("~/.config/gtk-3.0/","settings.ini"),
+    "gtk-3.0": ("~/.config/gtk-3.0/", " "),
 }
 
 rofi = "rofi -dmenu -p \"Config files\""
 
+def options(files):
+    return [ " " + files[f][1] + " " + f for f in files  ] 
+
 def main():
     global files
-    opciones = "\n".join(files.keys())
+    opciones = "\n".join(options(files))
 
     # Command to call dmenu in a fancy way
     # dmenu = "dmenu -fn 'Terminus-10' -nb '#1F1F36'"
 
     # Showing the options in the dmenu interface
-    archivo = os.popen("echo -e \"" + opciones + "\" | " + rofi).read()[:-1]
+    archivo = os.popen("echo -e \"" + opciones + "\" | " + rofi).read()[3:-1]
+    print(archivo)
 
     # Executing the option selected opening the desired file with vim
     os.system(

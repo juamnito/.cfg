@@ -1,11 +1,3 @@
-"  __  __ _         _                    
-" |  \/  (_) __   _(_)_ __ ___  _ __ ___ 
-" | |\/| | | \ \ / / | '_ ` _ \| '__/ __|
-" | |  | | |  \ V /| | | | | | | | | (__ 
-" |_|  |_|_|   \_/ |_|_| |_| |_|_|  \___|
-"                                        
-"                                        
-
 "================================================================|
 "////////////// GENERAL SETTINGS ////////////////////////////////|
 "================================================================|
@@ -14,7 +6,7 @@
 
 set exrc
 ""set guicursor
-set cursorline
+set cul
 set relativenumber
 set nu
 set nohlsearch
@@ -22,9 +14,16 @@ set hidden
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
-""set expandtab 
+"set expandtab 
 ""set autoindent
 set showmode
+set spelllang=es_mx
+
+set nobackup
+set nowritebackup
+
+set cmdheight=2
+set updatetime=300
 
 
 set wrap
@@ -38,7 +37,7 @@ set undofile
 
 set incsearch
 set scrolloff=8
-" set colorcolumn=80
+""set colorcolumn=80
 set signcolumn=yes
 set t_Co=256
 syntax on
@@ -47,10 +46,10 @@ set clipboard=unnamed
 set mouse=r
 
     " Tabs
-    filetype indent on
+    " filetype plugin indent on
 
 ""set smartindent                                               
-set encoding=UTF-8
+set encoding=utf-8
 
 " hidden characters
 set listchars=tab:»\ ,space:·,nbsp:␣,precedes:«,extends:»,eol:¬ ",trail:•
@@ -78,16 +77,6 @@ set list
 " siguiente
     " autocmd VimEnter * NERDTree
 
-if executable('rg')
-    let g:rg_derive_root='true'
-endif
-
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:netrw_browse_split=2
-let g:netrw_banner=0
-let g:netrw_winsize=25
-
-let g:ctrlp_use_caching=0
 
 "////////////////////////////////////////////////////////////////|
 "================================================================|
@@ -96,8 +85,8 @@ let g:ctrlp_use_caching=0
 "================================================================|
 "////////////// PLUGGINS CONFIG /////////////////////////////////|
 "================================================================|
-    source $HOME/.config/nvim/c-plugs/plugged.vim
-    source $HOME/.config/nvim/c-plugs/plugs-config.vim
+source $HOME/.config/nvim/c-plugs/plugged.vim
+source $HOME/.config/nvim/c-plugs/plugs-config.vim
 "////////////////////////////////////////////////////////////////|
 "================================================================|
 
@@ -105,6 +94,6 @@ let g:ctrlp_use_caching=0
 "================================================================|
 "////////////// MAPPINGS ////////////////////////////////////////|
 "================================================================|
-    source $HOME/.config/nvim/c-plugs/maps.vim
+source $HOME/.config/nvim/c-plugs/maps.vim
 "////////////////////////////////////////////////////////////////|
 "================================================================|

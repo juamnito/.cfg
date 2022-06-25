@@ -29,9 +29,6 @@ alt + shift + @space
 super + shift + n
     alacritty -e ranger
 
-# super + shift + h
-
-
 # system monitor
 ctrl + alt + t
     alacritty -e htop
@@ -44,8 +41,17 @@ super + shift + s
 super + C
     ~/.config/sxhkd/scripts/toggle-compton.sh
 
+# Browser
 super + alt + w
     brave
+
+# lock screen
+ctrl + super + l
+	betterlockscreen -l --blur 
+
+# scrot screenshot 
+super + alt + s
+	scrot --overwrite --select --silent --file="imagenes/scrot/%b%d %H:%M:%S.png"
 
 #
 # bspwm hotkeys

@@ -6,9 +6,9 @@ let mapleader=" "
 
     " General compilation
     noremap make :wall<CR> :! make<CR>
-    noremap <silent> <C-S>          :update<CR>
-    vnoremap <silent> <C-S>         <C-C>:update<CR>
-    inoremap <silent> <C-S>         <C-O>:update<CR>
+    noremap <silent> <C-S>  :update<CR>
+    vnoremap <silent> <C-S> <C-C>:update<CR>
+    inoremap <silent> <C-S> <C-O>:update<CR>
 
     " Generic                                                   
     inoremap ( ()<Left>
@@ -19,8 +19,8 @@ let mapleader=" "
     inoremap " ""<Left>
 
     " Windows
-        nnoremap    <leader>v :vsplit 
-        nnoremap    <leader>b :split 
+        nnoremap    <leader>v :vnew <CR>
+        nnoremap    <leader>b :new <CR>
 
         nnoremap    <leader>h :wincmd h<CR>
         nnoremap    <leader>l :wincmd l<CR>
@@ -35,15 +35,15 @@ let mapleader=" "
     nnoremap <leader>u :UndotreeShow<CR>
 
     " NERDTree
-        nnoremap <leader>ot <Esc>:NERDTree<Enter>
         nnoremap <leader>tt <Esc>:NERDTreeToggle<Enter>
-
-    " YouCompleteMe
-    nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
-    nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
+	" Telescope
+		nnoremap <leader>ff <cmd>Telescope find_files<cr>
+		nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+		nnoremap <leader>fb <cmd>Telescope buffers<cr>
+		nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
     " Guide
-        inoremap ;gui <++>
+        inoremap ;gui <++> 
 
         inoremap ,, <Esc>/<++><Enter>"_c4l<C-R>_
         vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l<C-R>_

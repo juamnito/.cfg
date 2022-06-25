@@ -39,18 +39,23 @@ let g:vimtex_compiler_latexmk = {
 "////////////// QUICKTEX ////////////////////////////////////////|
 "================================================================|
 
+let g:quicktex_usedefault = 1
+
 let g:quicktex_tex = {
     \' '   : "\<ESC>:call search('<+.*+>')\<CR>\"_c/+>/e\<CR>",
     \'mth' : "\\( <+++> \\) <++>",
     \'mmth' : "\\[\<CR><+++>\<CR>\\]\<CR><++>",
     \'prf' : "\\begin{proof}\<CR><+++>\<CR>\\end{proof}",
     \'sol' : "\\begin{solution}\<CR><+++>\<CR>\\end{solution}",
-    \'itemize' : "\\begin{itemize}<+++>\<CR>\\item\<CR><++>\<CR>\\end{itemize}",
-    \'enumerate' : "\\begin{enumerate}<+++>\<CR>\\item\<CR><++>\<CR>\\end{enumerate}",
-    \'item': "\\item\<CR><+++>",
+	\'item' : "\\begin{itemize}<+++>\<CR>\\setlength{\\parindent}{0.5cm}\<CR>\\item\<CR><++>\<CR>\\end{itemize}",
+	\'enum' : "\\begin{enumerate}<+++>\<CR>\\setlength{\\parindent}{0.5cm}\<CR>\\item\<CR><++>\<CR>\\end{enumerate}",
+    \'itm': "\\item\<CR><+++>",
     \'env' : "\\begin{<+++>}\<CR>\\end{<++>}",
     \'align' : "\\begin{align*}\<CR><+++>\<CR>\\end{align*}",
-    \'eqn' : "\\begin{equation*}\<CR><+++>\<CR>\\end{equation*}"
+    \'eqn' : "\\begin{equation*}\<CR><+++>\<CR>\\end{equation*}",
+	\'fig': "\\begin{figure}[H]\<CR>\\centering\<CR>\\includegraphics[width=<+++>\\textwidth]{<++>}\<CR>\\caption{<++>}\<CR>\\end{figure}",
+	\'tab': "\\begin{tabular}{<+++>}\<CR><++>\<CR>\\end{tabular}",
+	\'def': "\\begin{definition}\<CR><+++>\<CR>\\end{definition}"
 \}
 
 let g:quicktex_math = {
@@ -58,14 +63,24 @@ let g:quicktex_math = {
     \'set'  : '\left\{ <+++> \right\} <++>',
     \'frac' : '\frac{<+++>}{<++>} <++>',
     \'dfrac' : '\dfrac{<+++>}{<++>} <++>',
-    \'indic' : '\ind{<+++>}{<++>} <++>',
+	\'sum' : '\sum_{<+++>}^{<++>} <++> ',
+	\'prod' : '\prod_{<+++>}^{<++>} <++> ',
     \'Pars' : '\left( <+++> \right) <++>',
     \'pars' : '( <+++> ) <++>',
     \'Llavs' : '\left\{ <+++> \right\} <++>',
     \'llavs' : '\{ <+++> \} <++>',
     \'Corchs' : '\left[ <+++> \right] <++>',
     \'corchs' : '[ <+++> ] <++>',
-    \'pmtx' : "\\begin{pmatrix}\<CR><+++>\<CR>\\end{pmatrix}"
+	\'bar'	: '\overline{<+++>} <++>',
+	\'abs' : '\abs{<+++>} <++>',
+	\'norm' : '\\norm{<+++>} <++>',
+    \'pmtx' : "\\begin{pmatrix}\<CR><+++>\<CR>\\end{pmatrix}",
+	\'pint' : "\\prodint{<+++>} <++>",
+	\'ex' : "^{<+++>} <++>",
+	\'mcal' : "\\mathcal{<+++>} <++>",
+	\'mbb' : "\\mathbb{<+++>} <++>",
+	\'cases' : "\\left\\{ <+++> \\right.",
+	\'tab': "\\begin{tabular}{<+++>}\<CR><++>\<CR>\\end{tabular}"
 \}
 "/////////////////////////////////////////////////////////////////|
 "=================================================================|
@@ -85,17 +100,25 @@ let g:livepreview_previewer = 'zathura'
 "////////////// colorscheme onecolor ///////////////////////////|
 "=================================================================|
 
-" if (empty($TMUX))
-"     if (has("nvim"))
-"           let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-"     endif
-"     if (has("termguicolors"))
-"         set termguicolors
-"     endif
-" endif
+if (empty($TMUX))
+    if (has("nvim"))
+          let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    endif
+    if (has("termguicolors"))
+        set termguicolors
+    endif
+endif
 
 
 "////////////////////////////////////////////////////////////////|
 "================================================================|
 
+"=================================================================|
+"////////////// Conquer of Completion ////////////////////////////|
+"=================================================================|
+
+
+
+"////////////////////////////////////////////////////////////////|
+"================================================================|
 

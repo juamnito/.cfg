@@ -123,6 +123,7 @@ export ARCHFLAGS="-arch x86_64"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias config='/usr/bin/git --git-dir=/home/juamnito/.cfg/ --work-tree=/home/juamnito'
+alias vim=nvim
 
 
 # PATH=$PATH:$HOME/.scripts

@@ -13,6 +13,8 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Nerd Tree
     Plug 'preservim/nerdtree'                                       
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim'
 
     " Nerd tree icons
     Plug 'ryanoasis/vim-devicons'
@@ -20,7 +22,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'vim-utils/vim-man'                                        
     Plug 'lyuts/vim-rtags'                                          
     Plug 'https://github.com/kien/ctrlp.vim'                        
-    ""Plug 'https://github.com/ycm-core/YouCompleteMe'                
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'mbbill/undotree'                                          
     Plug 'VundleVim/Vundle.vim'                                     
 
@@ -34,10 +36,10 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'brennier/quicktex'
     Plug 'lervag/vimtex'
         " Output previewing
-    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' } 
+    ""Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' } 
 
     " Javascript
-    Plug 'pangloss/vim-javascript'
+    ""Plug 'pangloss/vim-javascript'
 
     " Python
     " Plug 'tmhedberg/simpylfold'

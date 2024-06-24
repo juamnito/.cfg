@@ -14,14 +14,14 @@ files = {
     "zsh": ("~/",""),
     "alacritty": ("~/.config/alacritty/",""),
         # launchers
-    "dmenu": ("~/.tools/dmenu-5.0"," "),
+    "dmenu": ("~/tools/dmenu-5.0"," "),
     "rofi": ("~/.config/rofi"," "),
         # file managers
     "ranger": ("~/.config/ranger/",""),
         # Pdf viewers
     "zathura": ("~/.config/zathura/",""),
         # Latex Scripts
-    "fstx": ("~/.tools/fstx"," "),
+    "fstx": ("~/tools/fstx"," "),
         # system
     "gtk-3.0": ("~/.config/gtk-3.0/", " "),
 }

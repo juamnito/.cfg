@@ -12,7 +12,11 @@ super + Return
 
 # program launcher
 super + @space
+	~/.config/rofi/launchers/colorful/launcher.sh
 	rofi -show run
+
+ctrl + @space
+	~/.config/rofi/powermenu/powermenu.sh
 
 # open config files
 super + shift + @space

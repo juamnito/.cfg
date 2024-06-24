@@ -5,6 +5,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/seoul256.vim'
     Plug 'arzg/vim-colors-xcode'
     Plug 'joshdick/onedark.vim'
+	" Plug 'navarasu/onedark.nvim'
 
     Plug 'jremmen/vim-ripgrep'                                      
     Plug 'tpope/vim-fugitive'                                       
@@ -31,9 +32,13 @@ call plug#begin('~/.config/nvim/plugged')
 
     " " Telescope 
     " Plug 'nvim-telescope/telescope.nvim'
+	
+	" Snippets
+	Plug 'SirVer/ultisnips'
+	Plug 'honza/vim-snippets'
 
     " Vim-Tex
-    Plug 'brennier/quicktex'
+    "Plug 'brennier/quicktex'
     Plug 'lervag/vimtex'
         " Output previewing
     ""Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' } 

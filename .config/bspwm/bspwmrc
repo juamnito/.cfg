@@ -1,12 +1,29 @@
 #! /bin/sh
 
-#Configuracion de fuanito
+# Configuracion de juamnito
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
-# bspc monitor -d I II III IV V VI VII VIII IX 
-# bspc monitor HDMI-A-0 -d X
+right=true
+
+# Checar si estoy conectado a otro monitor
+if [[ $(xrandr --query | grep 'HDMI') = *\ connected* ]]; then
+	if $right; then
+		bspc monitor -d 1 2 3 4 5
+		bspc monitor HDMI-A-0 -d 6 7 8 9 10
+		xrandr --output eDP --primary --mode 1920x1080 --rotate normal --output HDMI-A-0 --mode 1920x1080 --rotate normal --right-of eDP
+	else
+		bspc monitor -d 6 7 8 9 10
+		bspc monitor HDMI-A-0 -d 1 2 3 4 5
+		xrandr --output eDP --primary --mode 1920x1080 --rotate normal --output HDMI-A-0 --mode 1920x1080 --rotate normal --left-of eDP
+	fi
+else
+	bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+fi
+
+# bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+# bspc monitor -d 1 2 3 4 5 6 7 8 9
+# bspc monitor HDMI-A-0 -d 10
 
 window_gap=10
 border=2
@@ -15,7 +32,7 @@ top_padding=$(($polybar_height+$window_gap))
 
 bspc config border_width            $border
 bspc config normal_border_color     "#000000"
-bspc config focused_border_color    "#2F2F36"
+bspc config focused_border_color    "#FFB52A"
 bspc config window_gap              $window_gap
 bspc config top_padding             $top_padding
 
@@ -31,7 +48,7 @@ bspc rule -a Alacritty state=tiled
 
 # Run
 bluetoothctl power on
-bluetoothctl connect E0:9D:FA:47:33:8F
+# bluetoothctl connect E0:9D:FA:47:33:8F
 
 setxkbmap -layout latam
 compton &

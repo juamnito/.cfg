@@ -64,9 +64,9 @@ set list
         ""colo seoul256
         colorscheme onedark
         ""colorscheme gruvbox
-        " colorscheme xcodedark
-        " colorscheme xcodedarkhc
-        " colorscheme xcodewwdc
+        ""colorscheme xcodedark
+        ""colorscheme xcodedarkhc
+        ""colorscheme xcodewwdc
     set background=dark
     " highlight Normal guibg=none
     "

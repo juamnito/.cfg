@@ -2,8 +2,6 @@
 
 import os, sys
 
-sys.path.append("/home/juamnito/documentos/licenciatura/.scripts")
-
 from lista_materias import materias
 
 ############################################

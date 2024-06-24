@@ -51,13 +51,9 @@ let mapleader=" "
                                                                 
     " LaTeX maps                                                
         autocmd FileType tex inoremap $ $$<Left>
-        autocmd FileType tex imap \[ \[\]<Left><Left>                     
 
         autocmd FileType tex nnoremap enun :!~/T-scripts/Scripts/open-enun<CR><CR>
         autocmd FileType tex nnoremap sbib :!~/T-scripts/Scripts/open-bib<CR><CR>
-    " C++ 
-        autocmd FileType cpp inoremap /* /**/<Left><Left>
-        autocmd FileType cpp inoremap {<CR> {<CR>}<C-o>O
 
 "////////////////////////////////////////////////////////////////|
 "================================================================|

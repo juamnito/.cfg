@@ -1,9 +1,6 @@
 ############################################
 
-import os
-import sys
-
-sys.path.append("/home/juamnito/documentos/licenciatura/.scripts")
+import os, sys
 
 from lista_materias import materias
 
@@ -46,5 +43,6 @@ def main():
     os.system(
         "alacritty -e ranger " + selec
     )
+
 if __name__ == "__main__":
     main()

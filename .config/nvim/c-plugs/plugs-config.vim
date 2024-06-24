@@ -24,12 +24,19 @@ map <leader>l :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<
 "////////////// VimTex //////////////////////////////////////////|
 "================================================================|
 
+""syntax enable
+
 let g:vimtex_view_method = 'zathura'
+"let g:vimtex_view_general_viewer = 'evince'
+
+""let g:vimtex_compiler_method = 'latexrun'
+
 let g:vimtex_quickfix_open_on_warning = 0
 
 let g:vimtex_compiler_latexmk = {
             \ 'build_dir' : 'build',
             \}
+" let g:vimtex_compiler_engine = 'lualatex'
 
 "////////////////////////////////////////////////////////////////|
 "================================================================|
@@ -39,7 +46,7 @@ let g:vimtex_compiler_latexmk = {
 "////////////// QUICKTEX ////////////////////////////////////////|
 "================================================================|
 
-let g:quicktex_usedefault = 1
+""let g:quicktex_usedefault = 1
 
 let g:quicktex_tex = {
     \' '   : "\<ESC>:call search('<+.*+>')\<CR>\"_c/+>/e\<CR>",
@@ -47,8 +54,8 @@ let g:quicktex_tex = {
     \'mmth' : "\\[\<CR><+++>\<CR>\\]\<CR><++>",
     \'prf' : "\\begin{proof}\<CR><+++>\<CR>\\end{proof}",
     \'sol' : "\\begin{solution}\<CR><+++>\<CR>\\end{solution}",
-	\'item' : "\\begin{itemize}<+++>\<CR>\\setlength{\\parindent}{0.5cm}\<CR>\\item\<CR><++>\<CR>\\end{itemize}",
-	\'enum' : "\\begin{enumerate}<+++>\<CR>\\setlength{\\parindent}{0.5cm}\<CR>\\item\<CR><++>\<CR>\\end{enumerate}",
+	\'item' : "\\begin{itemize}<+++>\<CR>\\setlength{\\parindent}{1cm}\<CR>\\item\<CR><++>\<CR>\\end{itemize}",
+	\'enum' : "\\begin{enumerate}<+++>\<CR>\\setlength{\\parindent}{1cm}\<CR>\\item\<CR><++>\<CR>\\end{enumerate}",
     \'itm': "\\item\<CR><+++>",
     \'env' : "\\begin{<+++>}\<CR>\\end{<++>}",
     \'align' : "\\begin{align*}\<CR><+++>\<CR>\\end{align*}",
@@ -114,10 +121,16 @@ endif
 "================================================================|
 
 "=================================================================|
-"////////////// Conquer of Completion ////////////////////////////|
+"////////////// Ulti Snips ////////////////////////////|
 "=================================================================|
 
+let g:UltiSnipsExpandTrigger='<Tab>'
+let g:UltiSnipsJumpForwardTrigger='<space><space>'
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+let g:UltiSnipsEditSplit="vertical"
+
+"let g:UltiSnipsSnippetStorageDirectoryForUltiSnipsEdit="~/.config/nvim/plugged/vim-snippets/UltiSnips/"
 
 "////////////////////////////////////////////////////////////////|
 "================================================================|

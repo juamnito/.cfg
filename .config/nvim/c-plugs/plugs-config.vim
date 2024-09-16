@@ -24,7 +24,7 @@ map <leader>l :exec &conceallevel ? "set conceallevel=0" : "set conceallevel=1"<
 "////////////// VimTex //////////////////////////////////////////|
 "================================================================|
 
-""syntax enable
+syntax enable
 
 let g:vimtex_view_method = 'zathura'
 "let g:vimtex_view_general_viewer = 'evince'
@@ -33,9 +33,9 @@ let g:vimtex_view_method = 'zathura'
 
 let g:vimtex_quickfix_open_on_warning = 0
 
-let g:vimtex_compiler_latexmk = {
-            \ 'build_dir' : 'build',
-            \}
+"let g:vimtex_compiler_latexmk = {
+"            \ 'build_dir' : 'build',
+"            \}
 " let g:vimtex_compiler_engine = 'lualatex'
 
 "////////////////////////////////////////////////////////////////|

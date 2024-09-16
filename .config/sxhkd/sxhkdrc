@@ -12,8 +12,11 @@ super + Return
 
 # program launcher
 super + @space
-	~/.config/rofi/launchers/colorful/launcher.sh
-	rofi -show run
+	rofi -show drun
+
+#rofi -show drun
+
+# ~/.config/rofi/launchers/type-1/launcher.sh
 
 ctrl + @space
 	~/.config/rofi/powermenu/powermenu.sh

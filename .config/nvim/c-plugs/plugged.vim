@@ -1,7 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')                               
                                                                 
     " Colors
-    Plug 'morhetz/gruvbox'                                          
+    ""Plug '/gruvbox'                                          
+	Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
     Plug 'junegunn/seoul256.vim'
     Plug 'arzg/vim-colors-xcode'
     Plug 'joshdick/onedark.vim'

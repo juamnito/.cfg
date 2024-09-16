@@ -54,24 +54,11 @@ set encoding=utf-8
 " hidden characters
 set listchars=tab:»\ ,space:·,nbsp:␣,precedes:«,extends:»,eol:¬ ",trail:•
 set list
-                                                                
-    " searching words                                           
-    set ignorecase                                              
 
-    " set hlsearch                                              
-                                                                
-    " colors                                                    
-        ""colo seoul256
-        colorscheme onedark
-        ""colorscheme gruvbox
-        ""colorscheme xcodedark
-        ""colorscheme xcodedarkhc
-        ""colorscheme xcodewwdc
-    set background=dark
-    " highlight Normal guibg=none
-    "
-    " Transparency
-    hi Normal guibg=NONE ctermbg=NONE
+    " searching words
+    set ignorecase
+
+    " set hlsearch
 
 " Si necesitas el árbol de archivos cada que inicies vim descomenta lo
 " siguiente
@@ -97,3 +84,18 @@ source $HOME/.config/nvim/c-plugs/plugs-config.vim
 source $HOME/.config/nvim/c-plugs/maps.vim
 "////////////////////////////////////////////////////////////////|
 "================================================================|
+
+	" colors
+        ""colo seoul256
+        "colorscheme onedark
+        ""colorscheme gruvbox
+		""colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+		colorscheme catppuccin
+        ""colorscheme xcodedark
+        ""colorscheme xcodedarkhc
+        ""colorscheme xcodewwdc
+    set background=dark
+    " highlight Normal guibg=none
+    "
+    " Transparency
+    hi Normal guibg=NONE ctermbg=NONE
